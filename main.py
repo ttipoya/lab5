@@ -41,7 +41,7 @@ try:
 except:
     print("Ошибка")
 print('')
-print('№'+'       '+'Рекурсивная'+'        '+'Итеративная')
+print('№'+'       '+'Рекурсивно'+'        '+'Итеративно')
 for i in range(1,11):
     sci1 = 'from __main__ import paf'
     stmti = 'paf('+ str(i)+')'
@@ -54,7 +54,7 @@ y1 = a
 y2 = b
 plt.xlabel('Число, которое подаётся')
 plt.ylabel('Время поиска')
-plt.plot(x, y1, label='Рекурсивная')
-plt.plot(x, y2, label='Итеративная')
+plt.plot(x, y1, label='Рекурсивно')
+plt.plot(x, y2, label='Итеративно')
 plt.legend()
 plt.show()
