@@ -22,13 +22,13 @@ def pav(n):
     if n == 2:
         return 4
     if n >2:
-        fn = [1] * 4
-        fn[1] = 2
-        fn[2] = 4
+        f = [1] * 4
+        f[1] = 2
+        f[2] = 4
         for i in range(3, n+1):
-            fn[3] = 4* fn[2] - 3*fn[1]
-            fn[0], fn[1],fn[2] = fn[1],fn[2],fn[3]
-        return fn[3]
+            f[3] = 4* f[2] - 3*f[1]
+            f[0], f[1],f[2] = f[1],f[2],f[3]
+        return f[3]
 x = [1,2,3,4,5,6,7,8,9,10]
 try:
     print(paf(1000))
